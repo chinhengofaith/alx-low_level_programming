@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - check the code.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
-0-putchar();
-return (0);
+    print_alphabet_x10();
+    return (0);
 }
