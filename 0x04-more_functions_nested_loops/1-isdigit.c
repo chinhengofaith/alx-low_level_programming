@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * _isdigit - function that checks for uppercase character.
- * @c: the ascii value
- * return: 0
+ * @c: ascii value for the character
+ * Return: 0
  */
 int _isdigit(int c)
 {
