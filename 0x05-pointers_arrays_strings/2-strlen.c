@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * _strlen - a function to print length
  * @s:a pointer to set integer
