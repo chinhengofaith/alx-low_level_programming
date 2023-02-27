@@ -4,9 +4,13 @@
  * _puts - a function to print a string
  * @str: a pointer to a string
  *
- * Return: 0
+ * Return: nothing
  */
 void _puts(char *str)
 {
-	putchar("%s\n", *str);
+	while (*str)
+	{
+		_putchar(*str++);
+	}
+	_putchar('\n');
 }
