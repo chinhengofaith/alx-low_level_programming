@@ -2,49 +2,28 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * number_check - checks if a given char is number or not
- * @a: char to be checked
- * Return: 1, if its a number, else 0
- */
-int number_check(char *a)
-{
-	int b, num, len;
-
-	b = 0;
-	num = 0;
-	len = strlen(a);
-	while (b < len)
-	{
-		if (a[b] < '0' || a[b] > '9')
-		{
-			return (-1);
-		}
-		else
-			num = num * 10 + (a[b] - '0');
-		b++;
-	}
-	return (num);
-}
-/**
- * main - program to add positive numbers
- * @argc: arguement count
- * @argv: array of pointers to arguement strings
- * Return: result of addition or 1
+ * main - Entry Point
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int i, number, sum;
+	int a, sum = 0;
 
-	sum = 0;
-	for (i = 1; i < argc; i++)
+	if (argc < 1)
+		return (0);
+
+	for (a = 1; a < argc; a++)
 	{
-		number = number_check(argv[i]);
-		if (number == -1)
+		if (!atoi(argv[a]))
 		{
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 		}
-		sum = sum + number;
+		sum += atoi(argv[a]);
 	}
 	printf("%d\n", sum);
+
 	return (0);
+}
