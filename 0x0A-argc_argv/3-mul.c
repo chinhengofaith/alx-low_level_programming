@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	/* atoi convert a string to an int */
-	/*a = atoi(argv[1]);*/
-	/*b = atoi(argv[2]);*/
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 	res = a * b;
 	printf("%d\n", res);
 	return (0);
