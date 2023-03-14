@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * _strdup -  function that returns a pointer to a newly allocated space in memory,
+ * _strdup -  function that returns a pointer to a newly allocated space
  * @str: string to copy
  * Return: pointer to array or null
  */
