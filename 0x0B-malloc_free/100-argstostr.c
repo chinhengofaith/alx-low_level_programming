@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * argstostr -  function that concatenates all the arguments
  * @ac: int input
