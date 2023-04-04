@@ -8,3 +8,4 @@
 7-get_nodeint.c
 8-sum_listint.c
 9-insert_nodeint.c
+10-delete_nodeint.c
